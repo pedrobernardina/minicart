@@ -32,4 +32,9 @@ const CheckoutButton: FC<Props> = ({ finishShoppingButtonLink, classes }) => {
   )
 }
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+(CheckoutButton as any).schema = {
+  title: "store/finish-shopping-button-label",
+}
+
 export default CheckoutButton
